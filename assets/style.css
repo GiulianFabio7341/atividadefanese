@@ -1,0 +1,150 @@
+/*Definição de algumas propriedades padrões de formatação*/
+body {
+    width: 98vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Escolhi essas medidas afim de tornar a imagem dentro do header visível e incluir as buscas de navegações*/
+header {
+    height: 50vh;
+    width: 100vw;
+}
+
+header h3 {
+    color: white;
+    padding-left: 5%;
+    font-family: "Hind", sans-serif;
+    font-weight: normal;
+    position: relative;
+    bottom: 40vh;
+}
+
+header div .icons a {
+    padding: 5px;
+    left: 5vw;
+    position: relative;
+    bottom: 40vh;
+    color: #f785ff;
+}
+
+
+
+div.inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    gap: 12vh;
+}
+
+
+
+img {
+    height: 50vh;
+    width: 100vw;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 30px;
+    z-index: 10;
+}
+
+.menu a{
+    background-color: #ffffff;
+    color: rgb(17, 17, 17);
+    text-decoration: none;
+    border: 4px solid #ffffff;
+    border-radius: 10px;
+}
+
+
+.menu a:hover{
+    transition: 0.2s ease-in-out;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border: 10px solid #000000;
+    border-radius: 10px;
+}
+
+/* Quando o botão do ícone é focado, exibe o menu */
+.menubtn:focus+.menu {
+    display: flex;
+}
+
+/* Estilização do botão para garantir interatividade */
+.menubtn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    z-index: 11;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+/* Para o botão permanecer clicado em dispositivos móveis */
+.menubtn:focus {
+    outline: none;
+}
+
+
+main {
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+    width: 100vw;
+    background-color: rgb(48, 48, 48);
+}
+
+div.nav {
+    margin-right: 15px;
+}
+
+.nav a {
+    background-color: #ffffff;
+    color: rgb(17, 17, 17);
+    text-decoration: none;
+    border: 4px solid #ffffff;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 8px;
+    align-items: center;
+    text-align: center;
+}
+
+.nav a:hover {
+    transition: 0.2s ease-in-out;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border: 10px solid #000000;
+    border-radius: 10px;
+}
+
+main h3 {
+    padding-left: 5%;
+    font-family: "Hind", sans-serif;
+    font-weight: normal;
+}
+
+footer {
+    text-align: center;
+    height: 10vh;
+    padding-top: 10%;
+    width: 100vw;
+    background-color: rgb(48, 48, 48);
+}

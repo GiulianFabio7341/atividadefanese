@@ -1,45 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/assets/style.css">
     <script src="https://kit.fontawesome.com/5eb051a70c.js" crossorigin="anonymous"></script>
     <title>Interestelar</title>
 </head>
+
 <body>
 
     <header>
-<!--Parte que irá corresponder ao cabeçalho com navbar e links, é importante destacar pontos de interação para o usuário,
+        <!--Parte que irá corresponder ao cabeçalho com navbar e links, é importante destacar pontos de interação para o usuário,
 e destacar as possibilidades de acesso as demais funcionalidades do site educativo chamando assim a atenção do leitor!-->
-<img src="./assets/roxocabeçalho.jpg" alt="universo">
-<h3>Já pensou nas possibilidade de tocar uma estrela?</h3>
-<h3>De mergulhar em fundo nas crateras de uma lua?</h3>
-<h3>Vem conhecer um pouco mais sobre os grandes astros do nosso universo</h3>
+        <div class="inicio">
+            <div class="apresentação">
 
-<!--Links interativos para a navegação do leitor para redes socias do projeto Ted!-->
-<div class="icons">
-<a href=""><i class="fa-brands fa-instagram" style="color: #f785ff;"></i></a>
-<a href=""><i class="fa-brands fa-x-twitter" style="color: #f785ff;"></i></a>
-<a href=""><i class="fa-brands fa-tiktok" style="color: #f785ff;"></i></a>
-</div>
+                <img src="./assets/roxocabeçalho.jpg" alt="universo">
+                <h3>Já pensou nas possibilidade de tocar uma estrela?</h3>
+                <h3>De mergulhar em fundo nas crateras de uma lua?</h3>
+                <h3>Vem conhecer um pouco mais sobre os grandes astros do nosso universo</h3>
+                <h3>O projeto interestelar conta com você, venha fazer parte desse grande cosmo!</h3>
+                <!--Links interativos para a navegação do leitor para redes socias do projeto Ted, nesse exemplo usei um truque com os ícones do fontawesome!-->
+                <div class="icons">
+                    <a href=""><i class="fa-brands fa-instagram fa-beat"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter fa-beat"></i></a>
+                    <a href=""><i class="fa-brands fa-tiktok fa-beat"></i></a>
+                </div>
+
+            </div>
+
+            <!--Menu lateral(sidebar) envolvendo as opções alternativas do site educacional!-->
+            <div class="sidebar">
+                <button class="menubtn" onclick="abrirmenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <ul class="menu">
+                    <ol><a href="#" data-text="home">Home</a></ol>
+                    <ol><a href="#" data-text="Tenho interesse">Tenho interesse</a></ol>
+                    <ol><a href="#" data-text="Livros">Livros</a></ol>
+                    <ol><a href="#" data-text="categories">Fórum</a></ol>
+                    <ol><a href="#" data-text="about">Sobre nós</a></ol>
+                </ul>
+            </div>
+
+
+        </div>
+
     </header>
 
     <main>
-<!--Transmitir a ideia principal com posts interativos, acordeões, cards, sections e imagens sobre o tema interestelar-->
-<h3>Conteúdo principal</h3>
+        <!--Transmitir a ideia principal com posts interativos, acordeões, cards, divs e imagens sobre o tema interestelar-->
+        <h3>Projeto Interestelar</h3>
+        <div class="nav">
+            <a href="#teste">Notícias Principais</a>
+            <a href="#teste">Estrelas</a>
+            <a href="#teste">Planetas</a>
+            <a href="#teste">Constelações</a>
+        </div>
     </main>
 
     <footer>
-<!--Destacar o propósito do site e atribuir minha produção e marca para ele-->
-<span>
-            <a href="https://github.com/GiulianFabio7341" target="_blank"><i class="fa-brands fa-github fa-xl col"
-                    style="color: #f785ff;"></i></a>
+        <!--Destacar o propósito do site e atribuir minha produção e marca para ele-->
+        <span id="teste">
+            <a href="https://github.com/GiulianFabio7341" target="_blank"><i
+                    class="fa-brands fa-github fa-xl col"></i></a>
             <a href="https://www.linkedin.com/in/giulian-bastos-503312226/" target="_blank"><i
-                        class="fa-brands fa-xl fa-linkedin col" style="color: #f785ff;"></i></a>
+                    class="fa-brands fa-xl fa-linkedin col"></i></a>
             &COPY; Giulian Fabio Bastos Amorim Lima, 2025.
         </span>
     </footer>
-
+    <script>
+        function abrirmenu() {
+            const menu = document.querySelector('.menu');
+            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
 </body>
+
 </html>
