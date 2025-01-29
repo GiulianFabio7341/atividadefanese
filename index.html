@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/style.css">
     <script src="https://kit.fontawesome.com/5eb051a70c.js" crossorigin="anonymous"></script>
-    <title>Interestelar</title>
+    <title>Diário Interestelar</title>
 </head>
 
 <body>
@@ -59,45 +59,118 @@ e destacar as possibilidades de acesso as demais funcionalidades do site educati
             <a href="#teste">Estrelas</a>
             <a href="#teste">Planetas</a>
         </div>
- <!--A ideia aqui é fazer um card interativo, que aumente enquanto o cursor do mouse é passado.-->
+
+        <!--SOBRE O CONTEÚDO PRINCIPAL E ETAPAS DO DESENVOLVIMENTO
+        A ideia aqui é fazer um card interativo, que aumente enquanto o cursor do mouse é passado.
+        Cada card vai contar com um conteúdo exclusivo de forma educativa e que esteja relacionado ao tema interestelar e ao subtema estrealas ou planetas.
+        Irei estabelecer um limite de 2 cards(2 notícias) por tema!-->
+
+        <!--Primeira Etapa
+        A primeira etapa da exibição do card irei separar as notícias principais, das restasntes das notícia relacionadas a estrelas ou planetas, a ideia 
+        é que essa seja as notícias mais recentes e principais no mundo da astronomia.-->
 
         <div class="cards">
             <div class="card">
-                <img data-lazyloaded="1"
-                    src="https://jornal.usp.br/wp-content/uploads/2020/09/boletim_dia_e_noite_com_as_estrelas_iag_01.jpg"
-                    decoding="async" data-src="https://via.placeholder.com/150" alt="Boletim">
+                <img data-lazyloaded="1" src="./assets/boletim.jpg" decoding="async"
+                    data-src="https://via.placeholder.com/150" alt="Boletim">
                 <noscript><img decoding="async" src="https://via.placeholder.com/150"
                         alt="Imagem de exemplo"></noscript>
-                <h2>Boletim da científico</h2>
+                <h2>Boletim científico</h2>
                 <p>Boletim de pesquisadores da USP quer aproximar público dos conhecimentos científicos sobre astronomia
                     e manter interação.</p>
-                <button><a href="" target="_blank">Saiba mais</a></button>
+                <a href="https://jornal.usp.br/universidade/dia-e-noite-com-as-estrelas-traz-as-ultimas-noticias-do-espaco-intergalatico/"
+                    target="_blank">Ler sobre</a>
             </div>
 
             <div class="card">
-                <img data-lazyloaded="1"
-                    src="https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/aa75/live/c804f390-856a-11ef-83dd-fbf1b9732cf0.jpg.webp"
-                    decoding="async" data-src="https://via.placeholder.com/150" alt="Buraco Negro">
+                <img data-lazyloaded="1" src="./assets/buraconegro.png" decoding="async"
+                    data-src="https://via.placeholder.com/150" alt="Buraco Negro">
                 <noscript><img decoding="async" src="https://via.placeholder.com/150"
                         alt="Imagem de exemplo"></noscript>
                 <h2>Os buracos negros monstruosos</h2>
-                <p>Eles são inegavelmente enormes. Mas alguns cientistas acreditam que pode haver monstros ainda maiores à espreita por aí.</p>
-                <button><a href="https://www.bbc.com/portuguese/articles/cvgd8v7z929o" target="_blank">Saiba mais</a></button>
+                <p>Eles são inegavelmente enormes. Mas alguns cientistas acreditam que pode haver monstros ainda maiores
+                    à espreita por aí.</p>
+                <a href="https://www.bbc.com/portuguese/articles/cvgd8v7z929o" target="_blank">Ler sobre</a>
             </div>
 
         </div>
 
+        <!--Segunda Etapa
+        A segunda etapa da exibição do card irei separar as notícias relacionadas aos planetas e entre novas descobertas, o intúito é não só demonstrar as 
+        principais notícias mas temas interessantes que agregam ao conhecimento do leitor.-->
+        <div class="cardsplanetas">
+            <div class="card">
+                <img data-lazyloaded="1" src="./assets/planeta1.png" decoding="async"
+                    data-src="https://via.placeholder.com/150" alt="Boletim">
+                <noscript><img decoding="async" src="https://via.placeholder.com/150"
+                        alt="Imagem de exemplo"></noscript>
+                <h2>Exoplaneta a "apenas" 20 anos-luz da Terra</h2>
+                <p>Pesquisadores confirmaram existência do planeta e estão otimistas para próximas investigações.</p>
+                <a href="https://www.correiobraziliense.com.br/ciencia-e-saude/2025/01/7046026-planeta-que-pode-abrigar-vida-perto-da-terra.html"
+                    target="_blank">Ler sobre</a>
+            </div>
+
+            <div class="card">
+                <img data-lazyloaded="1" src="./assets/planeta2.jpg" decoding="async"
+                    data-src="https://via.placeholder.com/150" alt="Buraco Negro">
+                <noscript><img decoding="async" src="https://via.placeholder.com/150"
+                        alt="Imagem de exemplo"></noscript>
+                <h2>Beijo e captura: Plutão e Caronte se formaram em inédita colisão cósmica</h2>
+                <p>Há bilhões de anos, dois mundos transnetunianos colidiram, mas, em vez de se destruir, eles se
+                    aproximaram imensamente como em um beijo gravitacional</p>
+                <a href="https://www.cnnbrasil.com.br/tecnologia/beijo-e-captura-plutao-e-caronte-se-formaram-em-inedita-colisao-cosmica/"
+                    target="_blank">Ler sobre</a>
+            </div>
+
+        </div>
+
+        <!--Terceira Etapa
+        A terceira etapa da exibição do card irei separar as notícias relacionadas as estrelas e entre novas descobertas, o intúito é não só demonstrar as 
+        principais notícias mas temas interessantes que agregam ao conhecimento do leitor igualmente a segunda etapa.-->
+        <div class="cardsestrelas">
+            <div class="card">
+                <img data-lazyloaded="1" src="./assets/sol.jpg" decoding="async"
+                    data-src="https://via.placeholder.com/150" alt="Boletim">
+                <noscript><img decoding="async" src="https://via.placeholder.com/150"
+                        alt="Imagem de exemplo"></noscript>
+                <h2>Estrelas semelhantes ao Sol produzem superexplosão</h2>
+                <p>Estudo descobre que estrelas semelhantes ao Sol sofrem superexplosões uma vez por século, e que Sol
+                    pode se comportar de forma semelhate • Nasa/Divulgação.</p>
+                <a href="https://www.cnnbrasil.com.br/tecnologia/estrelas-semelhantes-ao-sol-produzem-superexplosao-a-cada-seculo-diz-estudo/"
+                    target="_blank">Ler sobre</a>
+            </div>
+
+            <div class="card">
+                <img data-lazyloaded="1" src="./assets/estrelas.png" decoding="async"
+                    data-src="https://via.placeholder.com/150" alt="Buraco Negro">
+                <noscript><img decoding="async" src="https://via.placeholder.com/150"
+                        alt="Imagem de exemplo"></noscript>
+                <h2>Estrelas, 10 segredos que você não sabe sobre elas e as constelações</h2>
+                <p>O que são as estrelas? Como elas nascem? Qual é o seu tamanho? Respondemos várias questões sobre os
+                    astros que talvez você não saiba.</p>
+                <a href="https://segredosdomundo.r7.com/estrelas/" target="_blank">Ler sobre</a>
+            </div>
+
+        </div>
+
+        <section>
+            <form action=""><h3>Formulário</h3></form>
+        </section>
 
     </main>
 
     <footer>
         <!--Destacar o propósito do site e atribuir minha produção e marca para ele-->
-        <span id="teste">
+        <span id="footer">
+
+            Site desenvolvido para publicações de artigos científicos e estudos educacionais destinados para a área da
+            astronomia <br><br>
             <a href="https://github.com/GiulianFabio7341" target="_blank"><i
                     class="fa-brands fa-github fa-xl col"></i></a>
             <a href="https://www.linkedin.com/in/giulian-bastos-503312226/" target="_blank"><i
                     class="fa-brands fa-xl fa-linkedin col"></i></a>
             &COPY; Giulian Fabio Bastos Amorim Lima, 2025.
+
         </span>
     </footer>
     <script>

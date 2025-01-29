@@ -1,5 +1,6 @@
 /*Definição de algumas propriedades padrões de formatação*/
 body {
+    height: max-content;
     width: 98vw;
     margin: 0;
     display: flex;
@@ -103,9 +104,11 @@ img {
 
 
 main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
-    height: 90vh;
     width: 100vw;
     background-color: rgb(48, 48, 48);
 }
@@ -142,6 +145,16 @@ main h3 {
 }
 
 .cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.cardsplanetas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.cardsestrelas{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -187,9 +200,10 @@ main h3 {
 	line-height: 1.5;
 	margin-bottom: 20px;
 }
-.card button{
+
+.card a{
     background-color: #ffffff;
-    color: rgb(17, 17, 17);
+    color: rgb(0, 0, 0);
     text-decoration: none;
     border: 10px solid #ffffff;
     border-radius: 10px;
@@ -197,19 +211,15 @@ main h3 {
     text-align: center;
     cursor: pointer;
     margin: -15px;
-}
+ }
 
-.card button a{
-   text-decoration: none;
-}
-.card button:hover{
-    transition: 0.2s ease-in-out;
+ .card  a:hover{
+    transition: 0.1s ease-in-out;
     background-color: #000000;
     color: rgb(255, 255, 255);
     border: 12px solid #000000;
     border-radius: 10px;
-}
-
+ }
 footer {
     text-align: center;
     height: 15vh;
