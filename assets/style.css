@@ -18,6 +18,7 @@ header {
     height: 50vh;
     width: 100vw;
 }
+
 /*Personalização do h3 do header*/
 header h3 {
     color: white;
@@ -27,6 +28,7 @@ header h3 {
     position: relative;
     bottom: 40vh;
 }
+
 /*Escolhi essas cores para os ícnones poís remetem a um estilo futurista e interestelar*/
 header div .icons a {
     padding: 5px;
@@ -152,6 +154,7 @@ div.nav {
     border: 10px solid #000000;
     border-radius: 10px;
 }
+
 /*Estilização da fonte do h3*/
 main h3 {
     color: #ffffff;
@@ -162,17 +165,19 @@ main h3 {
 
 /*Aqui foi onde foi feita a divisão horizontal dos cards relacionados a cada tema
 Tema 1:Cards principais*/
-.cards{
+.cards {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
+
 /*Tema 2:Planetas*/
 .cardsplanetas {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
+
 /*Tema 3:Estrelas*/
 .cardsestrelas {
     display: flex;
@@ -193,6 +198,7 @@ Tema 1:Cards principais*/
     box-shadow: 10px 10px 16px 0px rgba(255, 255, 255, 0.1);
     border-radius: 20px;
 }
+
 /*Estilização de cada card*/
 .card:hover {
     transition: 1s ease-in;
@@ -203,18 +209,21 @@ Tema 1:Cards principais*/
     box-shadow: 10px 10px 16px 0px rgba(255, 255, 255, 0.1);
     border-radius: 20px;
 }
+
 /*Estilização das propriedades da img dentro do card*/
 .card img {
     margin-top: 3vh;
     height: 40vh;
     width: 25vw;
 }
+
 /*Estilização das propriedades da h2 dentro do card*/
 .card h2 {
     font-family: helvetica;
     font-size: 15px;
     margin-bottom: 10px;
 }
+
 /*Estilização das propriedades do p dentro do card*/
 .card p {
     font-family: helvetica;
@@ -222,6 +231,7 @@ Tema 1:Cards principais*/
     line-height: 1.5;
     margin-bottom: 20px;
 }
+
 /*Estilização das propriedades da tag de navegação dentro do card*/
 .card a {
     background-color: #ffffff;
@@ -234,6 +244,7 @@ Tema 1:Cards principais*/
     cursor: pointer;
     margin: -15px;
 }
+
 /*Animação das propriedades da tag de navegação dentro do card*/
 .card a:hover {
     transition: 0.1s ease-in-out;
@@ -243,7 +254,63 @@ Tema 1:Cards principais*/
     border-radius: 10px;
 }
 
+/*Estabelecimento do formúlario com o propósito de ser quebrado em colunas
+para isso vamos usar o display flex no section que contém o formulário de contato*/
 
+
+section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: rgb(46, 42, 42);
+    box-shadow: 10px 10px 16px 0px rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    margin-top: 10vh;
+    padding: 80px;
+}
+
+section form label {
+    font-family: "Hind", sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+
+}
+
+section form input {
+  outline: none;
+    height: 3vh;
+    width: 15vw;
+    box-shadow: 10px 10px 32px 0px rgba(255, 255, 255, 0.1);
+    border-radius: 0px;
+}
+
+section form input:hover {
+    box-shadow: 10px 10px 16px 0px rgba(207, 49, 194, 0.1);
+    border-radius: 0px;
+}
+
+section form button{
+    background-color: #ffffff;
+    color: rgb(17, 17, 17);
+    text-decoration: none;
+    border: 4px solid #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+section form button:hover{
+    transition: 0.2s ease-in-out;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border: 5px solid #000000;
+    border-radius: 5px;
+}
 footer {
     color: #ffffff;
     text-align: center;
