@@ -1,4 +1,8 @@
-/*Definição de algumas propriedades padrões de formatação*/
+/*Definição de algumas propriedades nos padrões de formatação, foi necessário definir esses padrões
+para que a margem não atrapalhasse o processo inicial além de seperar o conteúdo principal do body 
+em 3 partes principais:header, main e footer por colunas, auxiliando já no processo de responsividade
+que será feito no futuro.*/
+
 body {
     height: max-content;
     width: 98vw;
@@ -14,7 +18,7 @@ header {
     height: 50vh;
     width: 100vw;
 }
-
+/*Personalização do h3 do header*/
 header h3 {
     color: white;
     padding-left: 5%;
@@ -23,7 +27,7 @@ header h3 {
     position: relative;
     bottom: 40vh;
 }
-
+/*Escolhi essas cores para os ícnones poís remetem a um estilo futurista e interestelar*/
 header div .icons a {
     padding: 5px;
     left: 5vw;
@@ -32,8 +36,14 @@ header div .icons a {
     color: #f785ff;
 }
 
+/*Tive como ponto de partida dar preferencia a essa imagem 100% horizontalmente*/
+header img {
+    height: 50vh;
+    width: 100vw;
+}
 
-
+/*Aqui foi um ponto importante do processo, no qual a imagem estava espremendo horizontalmente as divs filhas de início 
+logo, tomei como decisão aplicar a quebra column e alinhar a futura div e seus componentes usando position absolute*/
 div.inicio {
     display: flex;
     flex-direction: column;
@@ -42,12 +52,8 @@ div.inicio {
     gap: 12vh;
 }
 
-
-
-img {
-    height: 50vh;
-    width: 100vw;
-}
+/*Quero destacar o que disse anteriomente, usei a propriedade absolute e ordenei a posição
+já que o display flex não se aplica aqui e espreme a outra div pra fora da página.*/
 
 .menu {
     display: none;
@@ -60,7 +66,9 @@ img {
     z-index: 10;
 }
 
-.menu a{
+/*Estilização das tags de navegação*/
+
+.menu a {
     background-color: #ffffff;
     color: rgb(17, 17, 17);
     text-decoration: none;
@@ -68,8 +76,9 @@ img {
     border-radius: 10px;
 }
 
-
-.menu a:hover{
+/*ATENÇÃO quando voltar aqui:*/
+/*fazer uma animação um pouco mais suave que essa, torcendo pra dar tempo kkk*/
+.menu a:hover {
     transition: 0.2s ease-in-out;
     background-color: #000000;
     color: rgb(255, 255, 255);
@@ -78,12 +87,12 @@ img {
     border-radius: 10px;
 }
 
-/* Quando o botão do ícone é focado, exibe o menu */
+/*Interação ao clique*/
 .menubtn:focus+.menu {
     display: flex;
 }
 
-/* Estilização do botão para garantir interatividade */
+/*Atribuindo estilo ao btn*/
 .menubtn {
     position: absolute;
     top: 10px;
@@ -97,12 +106,15 @@ img {
     outline: none;
 }
 
-/* Para o botão permanecer clicado em dispositivos móveis */
+/*Aidna irei testar pra ver se aparece em dispositivos móveis*/
 .menubtn:focus {
     outline: none;
 }
 
-
+/*Foi necessário fazer uma separação em duas partes.
+A primeira foi dividir o main em colunas e alinhar os componentes desse main todos no centro.
+A razão disso foi uma decisão puramente tomada pelo meu gosto pessoal.
+Logo após disso como dito no documento html, eu optei em dividir os 3 conteúdos em 2 unidades de notícias horizontalmente*/
 main {
     display: flex;
     flex-direction: column;
@@ -113,10 +125,12 @@ main {
     background-color: rgb(48, 48, 48);
 }
 
+/*Criei uma simples ancora para ajudar na navegação do conteúdo do site*/
 div.nav {
     margin-right: 15px;
 }
 
+/*Estilização das tags a da classe nav*/
 .nav a {
     background-color: #ffffff;
     color: rgb(17, 17, 17);
@@ -129,6 +143,7 @@ div.nav {
     text-align: center;
 }
 
+/*Animação das tags a da classe nav*/
 .nav a:hover {
     transition: 0.2s ease-in-out;
     background-color: #000000;
@@ -137,29 +152,36 @@ div.nav {
     border: 10px solid #000000;
     border-radius: 10px;
 }
-
+/*Estilização da fonte do h3*/
 main h3 {
+    color: #ffffff;
     padding-left: 5%;
     font-family: "Hind", sans-serif;
     font-weight: normal;
 }
 
+/*Aqui foi onde foi feita a divisão horizontal dos cards relacionados a cada tema
+Tema 1:Cards principais*/
 .cards{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
-.cardsplanetas{
+/*Tema 2:Planetas*/
+.cardsplanetas {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
-.cardsestrelas{
+/*Tema 3:Estrelas*/
+.cardsestrelas {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
-.card{
+
+/*Estilização de cada card*/
+.card {
     margin-top: 5vh;
     margin-left: 5vw;
     align-items: center;
@@ -171,8 +193,8 @@ main h3 {
     box-shadow: 10px 10px 16px 0px rgba(255, 255, 255, 0.1);
     border-radius: 20px;
 }
-
-.card:hover{
+/*Estilização de cada card*/
+.card:hover {
     transition: 1s ease-in;
     transform: scale(1.1);
     z-index: 1;
@@ -181,27 +203,27 @@ main h3 {
     box-shadow: 10px 10px 16px 0px rgba(255, 255, 255, 0.1);
     border-radius: 20px;
 }
-
-.card img{
+/*Estilização das propriedades da img dentro do card*/
+.card img {
     margin-top: 3vh;
     height: 40vh;
     width: 25vw;
 }
-
+/*Estilização das propriedades da h2 dentro do card*/
 .card h2 {
     font-family: helvetica;
-	font-size: 15px;
-	margin-bottom: 10px;
+    font-size: 15px;
+    margin-bottom: 10px;
 }
-
+/*Estilização das propriedades do p dentro do card*/
 .card p {
     font-family: helvetica;
-	font-size: 15px;
-	line-height: 1.5;
-	margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 20px;
 }
-
-.card a{
+/*Estilização das propriedades da tag de navegação dentro do card*/
+.card a {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     text-decoration: none;
@@ -211,16 +233,19 @@ main h3 {
     text-align: center;
     cursor: pointer;
     margin: -15px;
- }
-
- .card  a:hover{
+}
+/*Animação das propriedades da tag de navegação dentro do card*/
+.card a:hover {
     transition: 0.1s ease-in-out;
     background-color: #000000;
     color: rgb(255, 255, 255);
     border: 12px solid #000000;
     border-radius: 10px;
- }
+}
+
+
 footer {
+    color: #ffffff;
     text-align: center;
     height: 15vh;
     padding-top: 10%;
