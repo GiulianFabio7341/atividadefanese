@@ -26,7 +26,7 @@ header h3 {
     font-family: "Hind", sans-serif;
     font-weight: normal;
     position: relative;
-    bottom: 40vh;
+    bottom: 30vh;
 }
 
 /*Escolhi essas cores para os ícnones poís remetem a um estilo futurista e interestelar*/
@@ -34,14 +34,25 @@ header div .icons a {
     padding: 5px;
     left: 5vw;
     position: relative;
-    bottom: 40vh;
+    bottom: 30vh;
     color: #f785ff;
 }
 
 /*Tive como ponto de partida dar preferencia a essa imagem 100% horizontalmente*/
-header img {
+header img.capa {
     height: 50vh;
     width: 100vw;
+}
+header img.logo {
+    position: absolute;
+    top: 20px;
+    left: 60px;
+}
+h1{
+    color: #ffffff;
+    position: absolute;
+    top: 100px;
+    left: 80px;
 }
 
 /*Aqui foi um ponto importante do processo, no qual a imagem estava espremendo horizontalmente as divs filhas de início 
@@ -270,6 +281,7 @@ section form {
     margin-top: 10vh;
     padding: 80px;
 }
+/*Estlização do label*/
 
 section form label {
     font-family: "Hind", sans-serif;
@@ -277,7 +289,7 @@ section form label {
     font-weight: bold;
 
 }
-
+/*Estlização do input*/
 section form input {
   outline: none;
     height: 3vh;
@@ -285,11 +297,12 @@ section form input {
     box-shadow: 10px 10px 32px 0px rgba(255, 255, 255, 0.1);
     border-radius: 0px;
 }
-
+/*Animação do input*/
 section form input:hover {
     box-shadow: 10px 10px 16px 0px rgba(207, 49, 194, 0.1);
     border-radius: 0px;
 }
+
 
 section form button{
     background-color: #ffffff;
@@ -311,6 +324,7 @@ section form button:hover{
     border: 5px solid #000000;
     border-radius: 5px;
 }
+/*Estlização do footer*/
 footer {
     color: #ffffff;
     text-align: center;
@@ -318,4 +332,37 @@ footer {
     padding-top: 10%;
     width: 100vw;
     background-color: rgb(48, 48, 48);
+}
+
+/*Iníco do processo de de responsividade para dispositivos móveis*/
+
+@media (min-width:401px) and (max-width:800px) {
+    
+     header h3 {
+font-size: 13px;
+padding-top: 11px;
+    }
+
+    header img.logo{
+        top: -0.5px;
+        left: 10px;
+    
+    }
+
+}
+
+@media (min-width:200px) and (max-width:400px) {
+    header h1 {
+        font-size: 20px;
+           }
+    header h3 {
+font-size: 11px;
+padding-top: 10px;
+   }
+
+   header img.logo{
+       top: -0.5px;
+       left: 10px;
+   }
+
 }
