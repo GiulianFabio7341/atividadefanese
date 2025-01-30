@@ -3,6 +3,9 @@ para que a margem não atrapalhasse o processo inicial além de seperar o conte�
 em 3 partes principais:header, main e footer por colunas, auxiliando já no processo de responsividade
 que será feito no futuro.*/
 
+@import url('https://fonts.googleapis.com/css2?family=Agu+Display&family=Bad+Script&family=Playwrite+HU:wght@100..400&family=Sixtyfour+Convergence&display=swap');
+
+
 body {
     height: max-content;
     width: 98vw;
@@ -11,6 +14,9 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    font-family: "Bad Script", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /*Escolhi essas medidas afim de tornar a imagem dentro do header visível e incluir as buscas de navegações*/
@@ -21,10 +27,11 @@ header {
 
 /*Personalização do h3 do header*/
 header h3 {
+    font-family: "Quicksand", sans-serif;
+    font-weight:400;
+    font-style: normal;
     color: white;
     padding-left: 5%;
-    font-family: "Hind", sans-serif;
-    font-weight: normal;
     position: relative;
     bottom: 30vh;
 }
@@ -43,12 +50,17 @@ header img.capa {
     height: 50vh;
     width: 100vw;
 }
+
 header img.logo {
     position: absolute;
     top: 20px;
     left: 60px;
 }
-h1{
+
+h1 {
+    font-family: "Bad Script", serif;
+    font-weight: 400;
+    font-style: normal;
     color: #ffffff;
     position: absolute;
     top: 100px;
@@ -169,9 +181,9 @@ div.nav {
 /*Estilização da fonte do h3*/
 main h3 {
     color: #ffffff;
-    padding-left: 5%;
-    font-family: "Hind", sans-serif;
-    font-weight: normal;
+    font-family: "Bad Script", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /*Aqui foi onde foi feita a divisão horizontal dos cards relacionados a cada tema
@@ -210,7 +222,7 @@ Tema 1:Cards principais*/
     border-radius: 20px;
 }
 
-/*Estilização de cada card*/
+/*Animação de cada card*/
 .card:hover {
     transition: 1s ease-in;
     transform: scale(1.1);
@@ -278,9 +290,11 @@ section form {
     background-color: rgb(46, 42, 42);
     box-shadow: 10px 10px 16px 0px rgba(255, 255, 255, 0.1);
     border-radius: 20px;
+    margin-left: 2vw;
     margin-top: 10vh;
     padding: 80px;
 }
+
 /*Estlização do label*/
 
 section form label {
@@ -289,14 +303,16 @@ section form label {
     font-weight: bold;
 
 }
+
 /*Estlização do input*/
 section form input {
-  outline: none;
+    outline: none;
     height: 3vh;
     width: 15vw;
     box-shadow: 10px 10px 32px 0px rgba(255, 255, 255, 0.1);
     border-radius: 0px;
 }
+
 /*Animação do input*/
 section form input:hover {
     box-shadow: 10px 10px 16px 0px rgba(207, 49, 194, 0.1);
@@ -304,7 +320,7 @@ section form input:hover {
 }
 
 
-section form button{
+section form button {
     background-color: #ffffff;
     color: rgb(17, 17, 17);
     text-decoration: none;
@@ -316,7 +332,7 @@ section form button{
     cursor: pointer;
 }
 
-section form button:hover{
+section form button:hover {
     transition: 0.2s ease-in-out;
     background-color: #000000;
     color: rgb(255, 255, 255);
@@ -324,6 +340,7 @@ section form button:hover{
     border: 5px solid #000000;
     border-radius: 5px;
 }
+
 /*Estlização do footer*/
 footer {
     color: #ffffff;
@@ -332,37 +349,256 @@ footer {
     padding-top: 10%;
     width: 100vw;
     background-color: rgb(48, 48, 48);
+    font-family: "Bad Script", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-/*Iníco do processo de de responsividade para dispositivos móveis*/
+/*Fluxograma responsividade dividido em 3 partes:
+1 parte: Disposítivos nóveis com (min-width:200px) and (max-width:400px)
+2 parte: Disposítivos nóveis com (min-width:401px) and (max-width:800px)
+3 parte: Nootebooks e dispositivos similares
+Iníco do processo de de responsividade para dispositivos móveis*/
 
-@media (min-width:401px) and (max-width:800px) {
-    
-     header h3 {
-font-size: 13px;
-padding-top: 11px;
-    }
-
-    header img.logo{
-        top: -0.5px;
-        left: 10px;
-    
-    }
-
-}
-
+/*Ajustes para outros tipos de resolução menores*/
 @media (min-width:200px) and (max-width:400px) {
     header h1 {
         font-size: 20px;
-           }
-    header h3 {
-font-size: 11px;
-padding-top: 10px;
-   }
+        margin-right: 5vw;
+    }
 
-   header img.logo{
-       top: -0.5px;
-       left: 10px;
-   }
+    header h3 {
+        font-size: 11px;
+        padding-top: 10px;
+    }
+
+    header img.logo {
+        top: -0.5px;
+        left: 10px;
+    }
+
+    /*Foi necessário definir um meio de destacar os cards já feitos e organiza-los.
+       Tomei como decisão inverter a ordem e apresenta-los em colunas*/
+    main div.cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main div.cardsplanetas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main div.cardsestrelas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.nav a {
+        margin-left: 15vw;
+        display: block;
+    }
+
+    /*Além disso, é necessário ajustar o tamanho individual do card*/
+
+    .card {
+        align-items: center;
+        text-align: center;
+        height: 60vh;
+        width: 85vw;
+        color: rgb(255, 255, 255);
+        background-color: rgb(46, 42, 42);
+        box-shadow: 10px 10px 16px 0px rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        margin-top: 8vh;
+        margin-right: 3vw;
+    }
+
+    /*Estilização de cada card*/
+    .card:hover {
+        transition: 1s ease-in;
+        transform: scale(1.1);
+        z-index: 1;
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        box-shadow: 10px 10px 16px 0px rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+    }
+
+    /*Estilização das propriedades da img dentro do card*/
+    .card img {
+        margin-top: 3vh;
+        height: 40vh;
+        width: 80vw;
+    }
+
+    /*Estilização das propriedades da h2 dentro do card*/
+    .card h2 {
+        font-family: helvetica;
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+
+    /*Estilização das propriedades do p dentro do card*/
+    .card p {
+        font-family: helvetica;
+        font-size: 10px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    /*Estilização das propriedades da tag de navegação dentro do card*/
+    .card a {
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        border: 10px solid #ffffff;
+        border-radius: 10px;
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+        margin: -15px;
+    }
+
+    /*Animação das propriedades da tag de navegação dentro do card*/
+    .card a:hover {
+        transition: 0.1s ease-in-out;
+        background-color: #000000;
+        color: rgb(255, 255, 255);
+        border: 12px solid #000000;
+        border-radius: 10px;
+    }
+
+    section form {
+        width: 30vw;
+        margin-bottom: 2vh;
+    }
+
+    section form input {
+        width: 30vw;
+
+    }
+
+    footer span {
+        font-size: 11px;
+    }
+
+}
+
+
+
+
+
+
+@media (min-width:401px) and (max-width:800px) {
+
+    header h3 {
+        font-size: 13px;
+        padding-top: 11px;
+    }
+
+    header img.logo {
+        top: -0.5px;
+        left: 10px;
+
+    }
+
+    /*Foi necessário definir um meio de destacar os cards já feitos e organiza-los.
+       Tomei como decisão inverter a ordem e apresenta-los em colunas*/
+    main div.cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main div.cardsplanetas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main div.cardsestrelas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*Além disso, é necessário ajustar o tamanho individual do card*/
+
+    .card {
+        align-items: center;
+        text-align: center;
+        height: 60vh;
+        width: 85vw;
+        color: rgb(255, 255, 255);
+        background-color: rgb(46, 42, 42);
+        box-shadow: 10px 10px 16px 0px rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        margin-top: 8vh;
+        margin-right: 3vw;
+    }
+
+    /*Estilização de cada card*/
+    .card:hover {
+        transition: 1s ease-in;
+        transform: scale(1.1);
+        z-index: 1;
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        box-shadow: 10px 10px 16px 0px rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+    }
+
+    /*Estilização das propriedades da img dentro do card*/
+    .card img {
+        margin-top: 3vh;
+        height: 40vh;
+        width: 80vw;
+    }
+
+    /*Estilização das propriedades da h2 dentro do card*/
+    .card h2 {
+        font-family: helvetica;
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+
+    /*Estilização das propriedades do p dentro do card*/
+    .card p {
+        font-family: helvetica;
+        font-size: 12px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    /*Estilização das propriedades da tag de navegação dentro do card*/
+    .card a {
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        border: 10px solid #ffffff;
+        border-radius: 10px;
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+        margin: -15px;
+    }
+
+    /*Animação das propriedades da tag de navegação dentro do card*/
+    .card a:hover {
+        transition: 0.1s ease-in-out;
+        background-color: #000000;
+        color: rgb(255, 255, 255);
+        border: 12px solid #000000;
+        border-radius: 10px;
+    }
+
+    section form {
+
+        margin-bottom: 2vh;
+    }
+
+    section form input {
+        width: 50vw;
+
+    }
+
 
 }
