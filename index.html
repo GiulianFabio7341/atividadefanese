@@ -25,25 +25,26 @@ e destacar as possibilidades de acesso as demais funcionalidades do site educati
                 <h3>O diário interestelar conta com você, venha fazer parte desse grande cosmo!</h3>
                 <!--Links interativos para a navegação do leitor para redes socias do projeto Ted, nesse exemplo usei um truque com os ícones do fontawesome!-->
                 <div class="icons">
-                    <a href=""><i class="fa-brands fa-instagram fa-beat"></i></a>
-                    <a href=""><i class="fa-brands fa-x-twitter fa-beat"></i></a>
-                    <a href=""><i class="fa-brands fa-tiktok fa-beat"></i></a>
+                    <a href="https://www.instagram.com/diariointerestelar1?igsh=dG11Y2xna3hvc282" target="_blank"><i class="fa-brands fa-instagram fa-beat"></i></a>
+                    <a href="https://x.com/DirioInter32918" target="_blank"><i class="fa-brands fa-x-twitter fa-beat"></i></a>
+                    <a href="https://www.tiktok.com/@dirio.interestela?lang=pt-BR" target="_blank"><i class="fa-brands fa-tiktok fa-beat"></i></a>
                 </div>
 
             </div>
 
-            <!--Menu lateral(sidebar) envolvendo as opções alternativas do site educacional!-->
+            <!--Menu lateral(sidebar) envolvendo as opções alternativas do site educacional
+            Pensei em colocar o botão início padrão, a opção notícias, uma navegação para livros sobre a astronomia em si
+            e finalmente uma navegação para o footer!-->
             <div class="sidebar">
                 <button class="menubtn" onclick="abrirmenu()">
                     <i class="fa-solid fa-bars"></i>
                 </button>
 
                 <ul class="menu">
-                    <ol><a href="#" data-text="home">Home</a></ol>
-                    <ol><a href="#" data-text="Tenho interesse">Tenho interesse</a></ol>
-                    <ol><a href="#" data-text="Livros">Livros</a></ol>
-                    <ol><a href="#" data-text="categories">Fórum</a></ol>
-                    <ol><a href="#" data-text="about">Sobre nós</a></ol>
+                    <ol><a href="#" data-text="Início" onClick="window.location.reload()">Início</a></ol>
+                    <ol><a href="#cards" data-text="Notícias">Notícias</a></ol>
+                    <ol><a href="https://www.amazon.com.br/Livros-Astronomia/b?ie=UTF8&node=7841799011" data-text="Livros" target="_blank">Livros</a></ol>
+                    <ol><a href="#contato" data-text="about">Contato</a></ol>
                 </ul>
             </div>
 
@@ -58,9 +59,10 @@ e destacar as possibilidades de acesso as demais funcionalidades do site educati
         <!--Criei uma ancora para auxiliar  no processo de navegação do conteúdo principal no site-->
         <h3>O maior portal educacional sobre nossos astros</h3>
         <div class="nav">
-            <a href="#teste">Notícias Principais</a>
-            <a href="#teste">Estrelas</a>
-            <a href="#teste">Planetas</a>
+            <a href="#cards">Notícias Principais</a>
+            <a href="#planetas">Planetas</a>
+            <a href="#estrelas">Estrelas</a>
+            
         </div>
 
         <!--SOBRE O CONTEÚDO PRINCIPAL E ETAPAS DO DESENVOLVIMENTO
@@ -72,7 +74,7 @@ e destacar as possibilidades de acesso as demais funcionalidades do site educati
         A primeira etapa da exibição do card irei separar as notícias principais, das restasntes das notícia relacionadas a estrelas ou planetas, a ideia 
         é que essa seja as notícias mais recentes e principais no mundo da astronomia.-->
 
-        <div class="cards">
+        <div class="cards" id="cards">
             <div class="card">
                 <img data-lazyloaded="1" src="./assets/boletim.jpg" decoding="async"
                     data-src="https://via.placeholder.com/150" alt="Boletim">
@@ -102,7 +104,7 @@ e destacar as possibilidades de acesso as demais funcionalidades do site educati
         A segunda etapa da exibição do card irei separar as notícias relacionadas aos planetas e entre novas descobertas, o intúito é não só demonstrar as 
         principais notícias mas temas interessantes que agregam ao conhecimento do leitor.-->
         <div class="cardsplanetas">
-            <div class="card">
+            <div class="card" id="planetas">
                 <img data-lazyloaded="1" src="./assets/planeta1.png" decoding="async"
                     data-src="https://via.placeholder.com/150" alt="Boletim">
                 <noscript><img decoding="async" src="https://via.placeholder.com/150"
@@ -120,7 +122,7 @@ e destacar as possibilidades de acesso as demais funcionalidades do site educati
                         alt="Imagem de exemplo"></noscript>
                 <h2>Beijo e captura: Plutão e Caronte se formaram em inédita colisão cósmica</h2>
                 <p>Há bilhões de anos, dois mundos transnetunianos colidiram, mas, em vez de se destruir, eles se
-                    aproximaram imensamente como em um beijo gravitacional</p>
+                    aproximaram imensamente como em um beijo gravitacional.</p>
                 <a href="https://www.cnnbrasil.com.br/tecnologia/beijo-e-captura-plutao-e-caronte-se-formaram-em-inedita-colisao-cosmica/"
                     target="_blank">Ler sobre</a>
             </div>
@@ -131,14 +133,13 @@ e destacar as possibilidades de acesso as demais funcionalidades do site educati
         A terceira etapa da exibição do card irei separar as notícias relacionadas as estrelas e entre novas descobertas, o intúito é não só demonstrar as 
         principais notícias mas temas interessantes que agregam ao conhecimento do leitor igualmente a segunda etapa.-->
         <div class="cardsestrelas">
-            <div class="card">
+            <div class="card" id="estrelas">
                 <img data-lazyloaded="1" src="./assets/sol.jpg" decoding="async"
                     data-src="https://via.placeholder.com/150" alt="Boletim">
                 <noscript><img decoding="async" src="https://via.placeholder.com/150"
                         alt="Imagem de exemplo"></noscript>
                 <h2>Estrelas semelhantes ao Sol produzem superexplosão</h2>
-                <p>Estudo descobre que estrelas semelhantes ao Sol sofrem superexplosões uma vez por século, e que Sol
-                    pode se comportar de forma semelhate • Nasa/Divulgação.</p>
+                <p>Estudo descobre que estrelas semelhantes ao Sol sofrem superexplosões uma vez por século.</p>
                 <a href="https://www.cnnbrasil.com.br/tecnologia/estrelas-semelhantes-ao-sol-produzem-superexplosao-a-cada-seculo-diz-estudo/"
                     target="_blank">Ler sobre</a>
             </div>
@@ -158,7 +159,7 @@ e destacar as possibilidades de acesso as demais funcionalidades do site educati
 
 <!--A ideia principal do section é inserir o formulário de contato do usuário-->
 
-        <section>
+        <section id="contato">
          
             <form action="">
                 <i class="fa-brands fa-wpforms fa-2xl" style="color: #ffffff;"></i>
@@ -172,7 +173,7 @@ e destacar as possibilidades de acesso as demais funcionalidades do site educati
                 <label for="email">Insira sua email:</label>
                 <input type="text" id="texto" placeholder="Ex:giutrum@gmail.com" required>
 
-                <button type="submit">Enviar pergunta</button>
+                <button type="submit" class="enviar">Finalizar cadastro</button>
             </form>
         </section>
 
@@ -196,6 +197,9 @@ e destacar as possibilidades de acesso as demais funcionalidades do site educati
         function abrirmenu() {
             const menu = document.querySelector('.menu');
             menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+        }
+        function form() {
+            console.log('oi')
         }
     </script>
 </body>
