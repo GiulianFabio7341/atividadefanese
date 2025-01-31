@@ -1,7 +1,9 @@
 /*Definição de algumas propriedades nos padrões de formatação, foi necessário definir esses padrões
 para que a margem não atrapalhasse o processo inicial além de seperar o conteúdo principal do body 
 em 3 partes principais:header, main e footer por colunas, auxiliando já no processo de responsividade
-que será feito no futuro.*/
+que será feito no futuro.
+Vale destacar que escolhi as paletas de cores baseadas em uma combinação de destaque não só o conteúdo
+principal mas também titulos, subtítulos além de fontes que remetem a caligrafia de um diário de notícias*/
 
 @import url('https://fonts.googleapis.com/css2?family=Agu+Display&family=Bad+Script&family=Playwrite+HU:wght@100..400&family=Sixtyfour+Convergence&display=swap');
 
@@ -28,8 +30,9 @@ header {
 
 /*Personalização do h3 do header*/
 header h3 {
-    font-family: "Montserrat", serif;;
-    font-weight:400;
+    font-family: "Montserrat", serif;
+    ;
+    font-weight: 400;
     font-style: normal;
     color: white;
     padding-left: 5%;
@@ -103,9 +106,8 @@ já que o display flex não se aplica aqui e espreme a outra div pra fora da pá
 }
 
 /*ATENÇÃO quando voltar aqui:*/
-/*fazer uma animação um pouco mais suave que essa, torcendo pra dar tempo kkk*/
+/*fazer uma animação um pouco mais suave que essa*/
 .menu a:hover {
-    transition: 0.2s ease-in-out;
     background-color: #000000;
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -358,7 +360,7 @@ footer {
 /*Fluxograma responsividade dividido em 3 partes:
 1 parte: Disposítivos nóveis com (min-width:200px) and (max-width:400px)
 2 parte: Disposítivos nóveis com (min-width:401px) and (max-width:800px)
-3 parte: Nootebooks e dispositivos similares
+3 parte: Nootebooks e dispositivos similares, se necessário
 Iníco do processo de de responsividade para dispositivos móveis*/
 
 /*Ajustes para outros tipos de resolução menores*/
@@ -401,13 +403,15 @@ Iníco do processo de de responsividade para dispositivos móveis*/
     }
 
 
-    .menu,.menubtn{
+    .menu,
+    .menubtn {
         position: absolute;
     }
+
     /*Além disso, é necessário ajustar o tamanho individual do card*/
 
     .card {
-        
+
         align-items: center;
         text-align: center;
         height: 60vh;
@@ -495,7 +499,7 @@ Iníco do processo de de responsividade para dispositivos móveis*/
 
 
 
-
+/*Ajuste para dispositivos móveis um pouco maiores*/
 @media (min-width:401px) and (max-width:800px) {
 
     header h3 {
@@ -526,7 +530,8 @@ Iníco do processo de de responsividade para dispositivos móveis*/
         flex-direction: column;
     }
 
-    .menu,.menubtn{
+    .menu,
+    .menubtn {
         position: absolute;
     }
 

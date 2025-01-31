@@ -11,6 +11,8 @@
 
 <body>
 
+    <!--O propósito do site é criar um portal de notícias e estudos sobre o mundo da astronomia!-->
+
     <header>
         <!--Parte que irá corresponder ao cabeçalho com navbar e links, é importante destacar pontos de interação para o usuário,
 e destacar as possibilidades de acesso as demais funcionalidades do site educativo chamando assim a atenção do leitor!-->
@@ -23,18 +25,22 @@ e destacar as possibilidades de acesso as demais funcionalidades do site educati
                 <h3>De mergulhar em fundo nas crateras de uma lua?</h3>
                 <h3>Vem conhecer um pouco mais sobre os grandes astros do nosso universo</h3>
                 <h3>O diário interestelar conta com você, venha fazer parte desse grande cosmo!</h3>
-                <!--Links interativos para a navegação do leitor para redes socias do projeto Ted, nesse exemplo usei um truque com os ícones do fontawesome!-->
+                <!--Links interativos para a navegação do leitor para redes socias do diário, nesse exemplo usei um truque com os ícones do fontawesome, 
+                além de realmente criar as redes sociais!-->
                 <div class="icons">
-                    <a href="https://www.instagram.com/diariointerestelar1?igsh=dG11Y2xna3hvc282" target="_blank"><i class="fa-brands fa-instagram fa-beat"></i></a>
-                    <a href="https://x.com/DirioInter32918" target="_blank"><i class="fa-brands fa-x-twitter fa-beat"></i></a>
-                    <a href="https://www.tiktok.com/@dirio.interestela?lang=pt-BR" target="_blank"><i class="fa-brands fa-tiktok fa-beat"></i></a>
+                    <a href="https://www.instagram.com/diariointerestelar1?igsh=dG11Y2xna3hvc282" target="_blank"><i
+                            class="fa-brands fa-instagram fa-beat"></i></a>
+                    <a href="https://x.com/DirioInter32918" target="_blank"><i
+                            class="fa-brands fa-x-twitter fa-beat"></i></a>
+                    <a href="https://www.tiktok.com/@dirio.interestela?lang=pt-BR" target="_blank"><i
+                            class="fa-brands fa-tiktok fa-beat"></i></a>
                 </div>
 
             </div>
 
             <!--Menu lateral(sidebar) envolvendo as opções alternativas do site educacional
             Pensei em colocar o botão início padrão, a opção notícias, uma navegação para livros sobre a astronomia em si
-            e finalmente uma navegação para o footer!-->
+            e finalmente uma navegação para o form!-->
             <div class="sidebar">
                 <button class="menubtn" onclick="abrirmenu()">
                     <i class="fa-solid fa-bars"></i>
@@ -43,7 +49,8 @@ e destacar as possibilidades de acesso as demais funcionalidades do site educati
                 <ul class="menu">
                     <ol><a href="#" data-text="Início" onClick="window.location.reload()">Início</a></ol>
                     <ol><a href="#cards" data-text="Notícias">Notícias</a></ol>
-                    <ol><a href="https://www.amazon.com.br/Livros-Astronomia/b?ie=UTF8&node=7841799011" data-text="Livros" target="_blank">Livros</a></ol>
+                    <ol><a href="https://www.amazon.com.br/Livros-Astronomia/b?ie=UTF8&node=7841799011"
+                            data-text="Livros" target="_blank">Livros</a></ol>
                     <ol><a href="#contato" data-text="about">Contato</a></ol>
                 </ul>
             </div>
@@ -53,7 +60,7 @@ e destacar as possibilidades de acesso as demais funcionalidades do site educati
 
     </header>
 
-    
+
     <main>
         <!--Transmitir a ideia principal com posts interativos, acordeões, cards, divs e imagens sobre o tema interestelar-->
         <!--Criei uma ancora para auxiliar  no processo de navegação do conteúdo principal no site-->
@@ -62,7 +69,7 @@ e destacar as possibilidades de acesso as demais funcionalidades do site educati
             <a href="#cards">Notícias Principais</a>
             <a href="#planetas">Planetas</a>
             <a href="#estrelas">Estrelas</a>
-            
+
         </div>
 
         <!--SOBRE O CONTEÚDO PRINCIPAL E ETAPAS DO DESENVOLVIMENTO
@@ -157,10 +164,10 @@ e destacar as possibilidades de acesso as demais funcionalidades do site educati
 
         </div>
 
-<!--A ideia principal do section é inserir o formulário de contato do usuário-->
+        <!--A ideia principal do section é inserir o formulário de contato do usuário-->
 
         <section id="contato">
-         
+
             <form action="">
                 <i class="fa-brands fa-wpforms fa-2xl" style="color: #ffffff;"></i>
                 <h3>Entre em contato</h3>
@@ -193,14 +200,15 @@ e destacar as possibilidades de acesso as demais funcionalidades do site educati
 
         </span>
     </footer>
+    <!--Fazendo uma simples função, sempre crio outro arquivo js mas como esse site só vai ter uma função js,
+    já que o intúito é mais o html e css, optei por deixar aqui mesmo pra não precisar criar um arquivo .js-->
     <script>
+
         function abrirmenu() {
             const menu = document.querySelector('.menu');
             menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
         }
-        function form() {
-            console.log('oi')
-        }
+
     </script>
 </body>
 
