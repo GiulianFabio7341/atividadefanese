@@ -8,7 +8,7 @@ que será feito no futuro.*/
 
 body {
     height: max-content;
-    width: 98vw;
+    width: max-content;
     margin: 0;
     display: flex;
     flex-direction: column;
