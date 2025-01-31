@@ -9,6 +9,7 @@ que será feito no futuro.*/
 body {
     height: max-content;
     width: max-content;
+    overflow-x: hidden;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -227,7 +228,7 @@ Tema 1:Cards principais*/
     transition: 1s ease-in;
     transform: scale(1.1);
     z-index: 1;
-    background-color: #ffffff;
+    background-color: #4e4040;
     color: rgb(0, 0, 0);
     box-shadow: 10px 10px 16px 0px rgba(255, 255, 255, 0.1);
     border-radius: 20px;
@@ -424,7 +425,7 @@ Iníco do processo de de responsividade para dispositivos móveis*/
         transition: 1s ease-in;
         transform: scale(1.1);
         z-index: 1;
-        background-color: #ffffff;
+        background-color: #4e4040;
         color: rgb(0, 0, 0);
         box-shadow: 10px 10px 16px 0px rgba(255, 255, 255, 0.1);
         border-radius: 20px;
@@ -549,7 +550,7 @@ Iníco do processo de de responsividade para dispositivos móveis*/
         transition: 1s ease-in;
         transform: scale(1.1);
         z-index: 1;
-        background-color: #ffffff;
+        background-color: #4e4040;
         color: rgb(0, 0, 0);
         box-shadow: 10px 10px 16px 0px rgba(255, 255, 255, 0.1);
         border-radius: 20px;
